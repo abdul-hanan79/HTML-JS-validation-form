@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 - Javascript_2</title>
+  </head>
+
+  <body>
+    <!-- question no.2 form validation using javascript -->
+    <form action="thanks.html" name="myForm" method="post">
+      <h1>User Registration Form with HTML5</h1>
+
+      <div id="userNameDiv">
+        <label for="username">Enter User Name: </label>
+        <input
+          type="text"
+          id="username"
+          name="fusername"
+          placeholder="for example: John"
+          required
+        />
+      </div>
+      <br />
+      <div id="emailDiv">
+        <label for="email">Enter Email Address: </label>
+        <input
+          type="text"
+          id="email"
+          name="femail"
+          placeholder="john@gmail.com"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="abcd@gmail.com"
+          required
+        />
+      </div>
+      <br />
+      <div id="passwordDiv">
+        <label for="password">Enter Password: </label>
+        <input
+          type="password"
+          id="password"
+          minlength="6"
+          name="fpassword"
+          placeholder="must be greater than 6 character"
+          required
+        />
+      </div>
+      <br />
+
+      <div id="conditions">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          dolorum ea eius necessitatibus maxime, delectus unde voluptate eveniet
+          facere itaque iure aperiam error temporibus ab! Tempore, voluptates
+          illo! Recusandae, assumenda.
+        </p>
+        <input type="checkbox" id="agreed" name="fagreed" required />
+        <label for="agreed"> agreed</label>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <a href="formValidationWithJs.html">
+      <h2>go to forvalidation with JavaScript</h2>
+    </a>
+  </body>
+</html>

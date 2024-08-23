@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - Javascript_2</title>
+</head>
+
+<body>
+
+
+    <!-- question no.2 form validation using javascript -->
+    <form action="thanks.html" name="myForm" onsubmit="return validateForm()" method="post">
+
+
+        <h1>User Registration Form with JavaScript</h1>
+
+        <div id="userNameDiv">
+            <label for="username">Enter User Name: </label>
+            <input type="text" id="username" name="fusername"> <b><span class="formError"></span></b>
+        </div>
+        <br>
+        <div id="emailDiv">
+            <label for="email">Enter Email Address: </label>
+            <input type="text" id="email" name="femail"><b><span class="formError"></span></b>
+        </div>
+        <br>
+        <div id="passwordDiv">
+            <label for="password">Enter Password: </label>
+            <input type="password" id="password" name="fpassword"><b><span class="formError"></span></b>
+        </div>
+        <br>
+
+        <div id="cPasswordDiv">
+            <label for="confirmPassword">Re eneter Password: </label>
+            <input type="password" id="confirmPassword" name="fconfirmPassword"><b><span class="formError"></span></b>
+        </div>
+        <br>
+
+
+        <div id="conditions">
+            <!-- sample terms and conditions -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorum ea eius necessitatibus maxime,
+                delectus unde voluptate eveniet facere itaque iure aperiam error temporibus ab! Tempore, voluptates
+                illo!
+                Recusandae, assumenda.</p>
+            <input type="checkbox" id="agreed" name="fagreed"> <label for="agreed"> agreed</label>
+            <b><span class="formError"></span></b>
+
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="formValidationHTML5.html">
+        <h2>go to forvalidation with HTML5</h2>
+    </a>
+    <script src="program1.js"></script>
+    <script src="program2.js"></script>
+
+</body>
+
+</html>
